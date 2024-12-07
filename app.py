@@ -11,7 +11,7 @@ UPLOAD_FOLDER = "./files"
 model = tf.keras.models.load_model('fine_tuned_mobilenet_grocery.h5')
 
 # Load class labels (update this to match your dataset structure)
-class_labels = ['buds', 'watch']  # Replace with your actual class names
+class_labels = ['buds_1750', 'watch_2000']  # Replace with your actual class names
 
 def predict_grocery_object(image_path):
     """

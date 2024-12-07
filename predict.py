@@ -19,7 +19,7 @@ def predict_grocery_object(image_path):
     predicted_class = np.argmax(predictions[0])
     
     # Load class labels (this depends on the dataset directory structure)
-    class_labels = ['buds', 'watch']  # Replace with actual class names
+    class_labels = ['buds_1750', 'watch_2000']  # Replace with actual class names
 
     return class_labels[predicted_class]
 
