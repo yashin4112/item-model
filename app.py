@@ -71,4 +71,4 @@ def predict():
         #     os.remove(UPLOAD_FOLDER + '/' + img_filename)
 
 if __name__ == '__main__':
-    app.run(host= "0.0.0.0",debug=False,port=3000)
+    app.run(host= "0.0.0.0",debug=False,port=5500)
