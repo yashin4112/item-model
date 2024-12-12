@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 UPLOAD_FOLDER = "./files"
 # Load the fine-tuned model
-model = tf.keras.models.load_model('fine_tuned_mobilenet_grocery.h5')
+model = tf.keras.models.load_model('./fine_tuned_mobilenet_grocery.h5')
 
 # Load class labels (update this to match your dataset structure)
 class_labels = ['buds_1750', 'watch_2000']  # Replace with your actual class names
