@@ -23,7 +23,3 @@ def predict_grocery_object(image_path):
 
     return class_labels[predicted_class]
 
-# Test with a new image
-# test_image_path = 'test_images/oppobuds.png'  # Update with your test image path
-# predicted_label = predict_grocery_object(test_image_path)
-# print(f"The object is recognized as: {predicted_label}")
