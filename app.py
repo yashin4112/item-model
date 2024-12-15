@@ -81,7 +81,7 @@ UPLOAD_FOLDER = "./files"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Load the fine-tuned model
-model = tf.keras.models.load_model('./fine_tuned_mobilenet_grocery.h5')
+model = tf.keras.models.load_model('./old_fine_tuned_mobilenet_grocery.h5')
 
 # Load class labels (update this to match your dataset structure)
 class_labels = ['buds_1750', 'watch_2000']  # Replace with your actual class names
@@ -140,6 +140,7 @@ def predict():
             predictions.append(f"Error processing {img.filename}: {str(e)}")
 
     # Return only the list of prediction labels
+    print(predictions)
     return jsonify(predictions), 200
 
 
